@@ -9,7 +9,12 @@
     border-bottom: 1px ridge;
     min-height:400px;
 }
-
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
 .footer{
     background-color: #D1C4E9;
     margin:0px auto;
