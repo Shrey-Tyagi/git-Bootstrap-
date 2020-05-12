@@ -40,6 +40,21 @@ body{
     padding:50px 0px 0px 0px;
     z-index:0;
 }
+.modal{
+    .modal-header{
+    background: $background-dark;
+    color:floralwhite;
+    .close{
+        color: floralwhite;
+        }
+    }
+    .modal-body{
+    background: $background-light ;
+    }
+    
+
+}
+
 
 .navbar-dark {
      background-color: $background-dark;

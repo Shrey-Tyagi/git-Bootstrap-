@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styless.css" rel="stylesheet">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -31,14 +31,14 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
-                    <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login</a>
+                    <span class="navbar-text" id ="lgButton">
+                        <a >
+                        <span  class="fa fa-sign-in"></span> Login</a>
                     </span>      
               </div>      
         </div>
     </nav>
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="lgModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
@@ -74,7 +74,7 @@
             </div>
         </div>
     </div>
-    <div id="RegisterModal" class="modal fade" role="dialog">
+    <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
@@ -170,9 +170,9 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3">
-                   <button type="submit"  class="btn text-white bg-warning btn-sm btn-block">
-                    <a role="button" class="btn btn-block nav-link btn-warning"  data-toggle="modal" data-target="#RegisterModal"
-                        >Reserve Table</a>
+                   <button type="submit"  id="myInput" class="btn text-white bg-warning btn-sm btn-block">
+                    <a role="button" class="btn btn-block nav-link btn-warning" 
+                    >Reserve Table</a>
                    </button> 
                 </div>
             </div>
@@ -206,7 +206,7 @@
                         </div>
                         <div class="carousel-item">
                             <img class="d-block img-fluid"
-                            src="img/alberto.png" alt="Alberto Somayya">
+                            src="img/albero.jpg" alt="Alberto Somayya">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2 class="mt-0">Alberto Somayya</h2>
                                 <h4>Executive Chef</h4>
@@ -354,7 +354,16 @@
         });
     </script> -->
     <script>
+    
+
+    
         $(document).ready(function(){
+            $("#myInput").click(function(){
+                $("#myModal").modal();
+            });
+            $("#lgButton").click(function(){
+                $("#lgModal").modal();
+            });
             $("#mycarousel").carousel( { interval: 2000 } );
             $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
