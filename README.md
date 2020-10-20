@@ -1,2 +1,3 @@
 # git-Bootstrap-
-Coursera Course on bootstrap! pretty neat content and highly recommended!
+Coursera Course on bootstrap! 
+Pretty neat content and highly recommended! A bit outdated but makes ones basics strong and one learns to look at documentation!
